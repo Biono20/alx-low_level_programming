@@ -1,2 +1,2 @@
 #!/bin/bash
-gvv -S $CFILE
+gcc -S $CFILE
