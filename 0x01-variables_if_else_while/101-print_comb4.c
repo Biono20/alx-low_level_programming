@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
- /**
+/**
 *main - Entry point
 *Discription: print comb4
 *Return: always 0
@@ -10,14 +10,14 @@ int main(void)
 {
 	int d, p, q;
 
-	for (d = '0'; d <= '9'; d++)
-	for (p = d + 1; p <= '9'; p++)
-	for (q = p + 1; q <= '9'; q++)
-	if ((p != d) != q)
+	for (d = 48; d < 58; n++)
+	for (p =  49; m < 58; p++)
+	for (q = 50; q < 58; q++)
+	if ((q > p && p > d)
 	putchar(d);
 	putchar(p);
 	putchar(q);
-	if (d == '7' && p == '8')
+	if (d != 55 || p != 56)
 	putchar(',');
 	putchar(' ');
 	putchar('\n');

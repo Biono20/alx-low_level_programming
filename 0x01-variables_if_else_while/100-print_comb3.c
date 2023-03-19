@@ -1,21 +1,21 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
- /**
-*main - Entry point
-*Return: always 0
+/**
+*main - prints all possible different combinations of two digits
+*Return: always 0 (Success)
 */
 int main(void)
 {
-	int d, p;
+	int i; 
+	int j;
 
-	for (d = '0'; d < '9'; d++)
-	for (p = d + 1; p <= '9'; p++)
-	if (p != d)
-	putchar(d);
-	putchar(p);
-	if (d == '8' && p == '9')
-	continue;
+	for (i = 0; i < 10; i++)
+	for (j = 1; j < 10; j++)
+	if (i < j && i != j)
+	putchar(i + '0');
+	putchar(j + '0');
+	if (i + j != 17)
 	putchar(',');
 	putchar(' ');
 	putchar('\n');
