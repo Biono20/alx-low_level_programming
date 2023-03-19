@@ -8,18 +8,27 @@
 */
 int main(void)
 {
-	int d, p, q;
+	int i;
+	int j;
+	int k;
 
-	for (d = 48; d < 58; n++)
-	for (p =  49; m < 58; p++)
-	for (q = 50; q < 58; q++)
-	if ((q > p && p > d)
-	putchar(d);
-	putchar(p);
-	putchar(q);
-	if (d != 55 || p != 56)
+	for (i = 0; i < 10; i++)
+	{
+	for (j = 1; j < 10; j++)
+	{
+	for (k = 2; k < 10; k++)
+	{
+	if (i < j && j < k)
+	{
+	putchar(i + '0');
+	putchar(j + '0');
+	putchar(k + '0');
 	putchar(',');
 	putchar(' ');
+	}
+	}
+	}
+	}
 	putchar('\n');
 	return (0);
 }
