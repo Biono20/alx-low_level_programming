@@ -1,7 +1,7 @@
 #include "main.h"
- /**
- * main - main function
- * _putchar: print the alphabets
+/**
+ * main - print putchar to the stardard output
+ * Description: Entry main
  * Return: always 0
  */
 
