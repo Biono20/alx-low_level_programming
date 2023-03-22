@@ -4,8 +4,10 @@
  * print_to_98 - function to print natural numbers
  *
  * @n: Function parameter
+ *
  * Return: always 0
  */
+
 void print_to_98(int n)
 {
 	int num, mult, prod;
