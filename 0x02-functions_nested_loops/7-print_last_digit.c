@@ -2,10 +2,8 @@
 
 /**
  * print_last_digit - function that prints last digit
- *
- * @i: function parameter
- *
- * Return: Always 0
+ * @n: function parameter
+ * Return: Value of the last digit of number
  */
 
 int print_last_digit(int n)
