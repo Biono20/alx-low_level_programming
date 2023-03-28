@@ -1,43 +1,36 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * _strcpy -Copy a string
- * @dest: Destination value
- * @src: Source value
- * Return: the pointer to dest
+ * _atoi - convert a string to an integer.
+ * @s: the string to be comverted.
+ *
+ *Return: The integer value of the comverted string.
  */
 
 int _atoi(char *s)
 {
-	int i, d, n, len, f, digit;
+	int sign = 1;
+	int i = 0;
+	unsigned int res = 0;
+	int j = 0;
 
-	i = 0;
-	d = 0;
-	n = 0;
-	len = 0;
-	f = 0;
-	digit = 0;
-
-	while (s[len] != '\0')
-		len++;
-	while (i < len && f == 0)
+	for (i = j; s[i] != '\0'; i++)
 	{
-	if (s[i] == '-')
-		++d;
-	if (s[i] >= '0' && s[i] <= '9')
-	{
-		digit = s[i] - '0';
-	if (d % 2)
-		digit = -digit;
-	n = n * 10 + digit;
-	f = 1;
-	if (s[i + 1] < '0' || s[i + 1] > '0')
-	break;
-	f = 0;
+		if ((res > 0) && (s[i] >= 'a' && s[i] <= 'z'))
+		{
+			return (res);
+		}
+		if (((char)s[i] >= 48 && (char)s[i] <= 57) || s[i] == '-')
+		{
+			if (s[i] == '-')
+			{
+				sign = sign * -1;
+				continue;
+			}
+			res = res * 10 + s[i] - '0';
+			continue;
+		}
 	}
-	i++;
-	}
-	if (f == 0)
-	return (0);
-	return (n);
+	return (res * sign);
 }
