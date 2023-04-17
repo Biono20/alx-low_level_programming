@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include "dog.h"
+	#include "dog.h"
 
 
 	/**
@@ -17,3 +17,4 @@
 		d->age = age;
 		d->owner = owner;
 	}
+
